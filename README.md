@@ -151,7 +151,7 @@ The skill extends Pass 3 with two dimensions Keshav's original omits: writing cr
 
 ### First-Principles Systems Analysis
 
-Four invariant questions cut through surface differences between papers to reveal fundamental design choices. Developed in the Gupta Research Group for networking and systems research and detailed in [*First Principles of Computer Networking*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/), they are: What state does the system manage? What timescales matter? How do components coordinate? What are the boundaries between components?
+Four invariant questions cut through surface differences between papers to reveal fundamental design choices. Developed in the Gupta Research Group for networking and systems research and detailed in [*A First-Principles Approach to Networked Systems*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/), they are: What state does the system manage? What timescales matter? How do components coordinate? What are the boundaries between components?
 
 These questions generate an invariant matrix — each row a paper, each column a fundamental dimension. Patterns, disagreements, and unexplored combinations become visible. The matrix is the raw material for a related work section built on structural comparison rather than chronological listing.
 
@@ -195,7 +195,7 @@ The skill ships with defaults tuned for systems and networking research (SIGCOMM
 |--------|-------------|------------------|
 | Kahneman, *Thinking, Fast and Slow* (2011) | Dual-process theory, WYSIATI, anchoring, calibration | Every mode transition, calibration protocol, WYSIATI checks |
 | Keshav, "How to Read a Paper" (2007) | Three-pass reading, calibrated depth | Triage depth assignment, Deepen mode structure |
-| Gupta, [*First Principles of Computer Networking*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/) | Invariant questions (STCI), design principles, ADGs | Deepen Step 4, Synthesize invariant matrix |
+| Gupta, [*A First-Principles Approach to Networked Systems*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/) | Invariant questions (STCI), design principles, ADGs | Deepen Step 4, Synthesize invariant matrix |
 | Gupta Lab, Paper-Writing Skill | Six-move intro formula, evaluation maturity, design craft | Deepen Step 6, writing craft extraction |
 | Gupta Lab, WALTER Principle (2025) | Structured figure narration, visual argument analysis | Deepen Step 7, visualization extraction |
 | NotebookLM MCP CLI | Grounded query backend, source ingestion, cross-corpus queries | All modes (backend infrastructure) |
