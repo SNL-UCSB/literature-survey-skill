@@ -131,7 +131,7 @@ The concern that agents weaken intellectual muscles gets the causality backwards
 
 ## Part of a Series
 
-This skill is one of a family of Claude Code skills developed at the [Systems and Networking Lab (SNL)](https://snl-ucsb.github.io/) at UC Santa Barbara by [Arpit Gupta](https://sites.cs.ucsb.edu/~arpitgupta/), each targeting a different phase of the research pipeline where plumbing buries ingenuity:
+This skill is one of a family of Claude Code skills developed at the [Systems and Networking Lab (SNL)](https://github.com/SNL-UCSB) at UC Santa Barbara by [Arpit Gupta](https://sites.cs.ucsb.edu/~arpitgupta/), each targeting a different phase of the research pipeline where plumbing buries ingenuity:
 
 | Skill | What it compresses | Student retains |
 |-------|-------------------|-----------------|
@@ -161,7 +161,7 @@ The skill extends Pass 3 with two dimensions Keshav's original omits: writing cr
 
 ### First-Principles Systems Analysis
 
-Four invariant questions cut through surface differences between papers to reveal fundamental design choices. Developed at the [Systems and Networking Lab (SNL)](https://snl-ucsb.github.io/) at UC Santa Barbara and detailed in [*A First-Principles Approach to Networked Systems*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/), they are: What state does the system manage? What timescales matter? How do components coordinate? What are the boundaries between components?
+Four invariant questions cut through surface differences between papers to reveal fundamental design choices. Developed at the [Systems and Networking Lab (SNL)](https://github.com/SNL-UCSB) at UC Santa Barbara and detailed in [*A First-Principles Approach to Networked Systems*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/), they are: What state does the system manage? What timescales matter? How do components coordinate? What are the boundaries between components?
 
 These questions generate an invariant matrix — each row a paper, each column a fundamental dimension. Patterns, disagreements, and unexplored combinations become visible. The matrix is the raw material for a related work section built on structural comparison rather than chronological listing.
 
