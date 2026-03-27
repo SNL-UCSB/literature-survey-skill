@@ -121,15 +121,25 @@ The reference materials and templates work independently of the skill runtime. U
 
 ## Why This Skill Exists
 
-PhD students are the engine of research. Their ingenuity — the ability to see a gap, formulate an approach, and push a field forward — is the scarce resource. Everything else is plumbing.
+Academic research faces a structural squeeze. Stagnant funding collides with rising costs. The arithmetic is stark: researchers must produce more with less, or momentum falters. Agentic AI systems offer a way through — not by replacing researchers, but by compressing the operational middle of the research pipeline while keeping the intellectual work human. This is the argument laid out in [*Systems for Agents, Agents for Systems*](https://sites.cs.ucsb.edu/~arpitgupta/blog/systems-for-agents-agents-for-systems.html).
 
-Literature surveys are where ingenuity gets buried under plumbing. The intellectual work — identifying shared assumptions, finding where those assumptions break, spotting combinations nobody has tried — takes a fraction of the time students spend. The rest is mechanical: finding papers, extracting claims, cross-referencing terminology, building comparison tables, tracking citation chains. Students spend weeks on logistics and arrive at synthesis exhausted, anchored by whatever they happened to read first.
+The division is clean. Three competencies remain structurally human: **discrimination** (evaluating what agents produce), **critique** (understanding failure modes), and **framing** (hypothesis formation and interpretation). Everything else — the mechanical logistics that exhaust students before they reach synthesis — is plumbing that machines can handle.
 
-This skill shunts the plumbing to the machine. NotebookLM ingests papers and returns grounded extractions with exact quotes. Claude Code manages the workflow, generates structured queries, populates templates, and tracks reading depth against time budgets. This frees the student's attention for the work that matters: forming hypotheses about what connects papers, deciding what's important, recognizing when an assumption is quietly shared across an entire subfield, spotting the constraint change that creates an opening.
+Literature surveys are where this principle hits hardest. A student with a sharp research question and a pile of 50 papers has the ideation. What they lack is an efficient path from that question to a synthesized understanding they can build on. They spend weeks on extraction and cross-referencing, arrive at synthesis anchored by whatever they happened to read first, and mistake a fluent annotated bibliography for genuine understanding. The skill provides the path. The student walks it.
 
-The skill accelerates expertise-building. Every structured checkpoint — the calibration protocol, the WYSIATI checks, the first-principles decomposition — forces the student to articulate their own understanding and confront where it falls short. The machine provides raw material. The student provides judgment. The result is a student who reaches synthesis faster and arrives sharper.
+The concern that agents weaken intellectual muscles gets the causality backwards. This skill doesn't hand students conclusions — it forces them to articulate their own understanding at every checkpoint and confront where it falls short. The calibration protocol, the WYSIATI checks, the first-principles decomposition — these are structural demands on the student's judgment. The machine provides raw material. The student provides discrimination, critique, and framing. The result is a student who reaches synthesis faster and arrives sharper, not one who skipped the thinking.
 
-This is the broader principle behind all skills in this series: bridge the gap between ideation and execution. A student with a sharp research question and a pile of 50 papers has the ideation. What they lack is an efficient path from that question to a synthesized understanding they can build on. The skill provides that path. The student walks it.
+## Part of a Series
+
+This skill is one of a family of Claude Code skills developed in the [SNL-UCSB](https://github.com/SNL-UCSB) research group, each targeting a different phase of the research pipeline where plumbing buries ingenuity:
+
+| Skill | What it compresses | Student retains |
+|-------|-------------------|-----------------|
+| **[literature-survey-skill](https://github.com/SNL-UCSB/literature-survey-skill)** | Paper ingestion, claim extraction, cross-referencing, landscape mapping | Hypothesis formation, assumption identification, gap recognition, narrative construction |
+| **[data-visualization-skill](https://github.com/SNL-UCSB/data-visualization-skill)** | Plot formatting, code generation, style compliance | Deciding what to show, why it matters, and whether the figure is honest |
+| **[paper-writing-skill](https://github.com/SNL-UCSB/paper-writing-skill)** | Drafting mechanics, structural scaffolding, revision logistics | Argument construction, positioning, voice |
+
+The principle is the same across all three: bridge the gap between ideation and execution. Compress the operational middle. Protect the thinking. The skills are independent — use any one alone — but they share an intellectual foundation and reinforce each other when used together. A literature survey feeds directly into a paper's related work section and its figures.
 
 ## Intellectual Foundations
 
@@ -193,11 +203,12 @@ The skill ships with defaults tuned for systems and networking research (SIGCOMM
 
 | Source | Contribution | Where it appears |
 |--------|-------------|------------------|
+| Gupta, [*Systems for Agents, Agents for Systems*](https://sites.cs.ucsb.edu/~arpitgupta/blog/systems-for-agents-agents-for-systems.html) (2025) | Compress the operational middle, protect judgment | Design philosophy, skill series rationale |
 | Kahneman, *Thinking, Fast and Slow* (2011) | Dual-process theory, WYSIATI, anchoring, calibration | Every mode transition, calibration protocol, WYSIATI checks |
 | Keshav, "How to Read a Paper" (2007) | Three-pass reading, calibrated depth | Triage depth assignment, Deepen mode structure |
 | Gupta, [*A First-Principles Approach to Networked Systems*](https://sites.cs.ucsb.edu/~arpitgupta/first-principles-networking/) | Invariant questions (STCI), design principles, ADGs | Deepen Step 4, Synthesize invariant matrix |
-| Gupta Lab, Paper-Writing Skill | Six-move intro formula, evaluation maturity, design craft | Deepen Step 6, writing craft extraction |
-| Gupta Lab, WALTER Principle (2025) | Structured figure narration, visual argument analysis | Deepen Step 7, visualization extraction |
+| [paper-writing-skill](https://github.com/SNL-UCSB/paper-writing-skill) | Six-move intro formula, evaluation maturity, design craft | Deepen Step 6, writing craft extraction |
+| [data-visualization-skill](https://github.com/SNL-UCSB/data-visualization-skill) | WALTER principle, structured figure narration, visual argument analysis | Deepen Step 7, visualization extraction |
 | NotebookLM MCP CLI | Grounded query backend, source ingestion, cross-corpus queries | All modes (backend infrastructure) |
 | Tufte, *The Visual Display of Quantitative Information* (1983) | Data-ink ratio, honest representation | Visualization analysis guide |
 
