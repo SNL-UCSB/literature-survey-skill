@@ -2,7 +2,7 @@
 
 This reference guides the visualization extraction step during Pass 2+ in deepen mode. The goal: build a corpus of effective visualization patterns from papers in your field, feeding directly into the data-visualization skill.
 
-Source: Gupta Lab WALTER principle + Tufte's data-ink ratio + Tukey's exploratory analysis philosophy.
+Source: SNL-UCSB WALTER principle + Tufte's data-ink ratio + Tukey's exploratory analysis philosophy.
 
 ## Figure Inventory Template
 
