@@ -1,6 +1,10 @@
 # literature-survey-skill
 
-Install with `./setup.sh`. Start with `/survey intent`. Four modes — Intent, Triage, Deepen, Synthesize — take PhD students from a pile of papers to a synthesized understanding of what the field knows, what it doesn't, and where to push next.
+PhD students spend weeks on literature surveys. Most of that time is plumbing — finding papers, extracting claims, cross-referencing terminology, building comparison tables, chasing citation chains. The intellectual work that matters — spotting shared assumptions, finding where they break, recognizing the gap nobody has exploited — takes a fraction of the effort but only happens after the student is already exhausted from logistics.
+
+This skill offloads the plumbing to the machine. NotebookLM ingests your papers and returns grounded extractions with exact quotes. Claude Code manages the workflow — structured queries, template population, reading-depth tracking. You focus on forming hypotheses, deciding what matters, and building the narrative. The skill doesn't just save time; it makes you sharper. Every checkpoint — calibration protocols, WYSIATI checks, first-principles decomposition — forces you to articulate your understanding and confront where it falls short.
+
+**Who this is for:** PhD students and researchers running literature surveys of 10-150+ papers. Tuned for systems and networking (SIGCOMM, NSDI, CoNEXT, IMC) but adaptable to any field — see [Customize for Your Field](#customize-for-your-field).
 
 Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
@@ -26,7 +30,7 @@ Start with `/survey intent`. The skill guides you from there.
 
 ### Prerequisites
 
-The [NotebookLM MCP CLI](https://github.com/nicholasgcoles/notebooklm-mcp-cli) must be configured as an MCP server in your Claude Code setup. See `reference/notebooklm_tools.md` for details.
+The [NotebookLM MCP CLI](https://github.com/jacob-bd/notebooklm-mcp-cli) must be configured as an MCP server in your Claude Code setup. **[Follow the setup guide](NOTEBOOKLM_SETUP.md)** — it covers installation, Google authentication, and MCP registration in ~5 minutes.
 
 ### Manual Install
 
@@ -78,6 +82,7 @@ Structured corpus growth with student-in-the-loop approval. Candidates surface d
 literature-survey-skill/
 ├── SKILL.md                              # The skill definition (install this)
 ├── README.md                             # You are here
+├── NOTEBOOKLM_SETUP.md                   # NotebookLM MCP CLI setup guide
 ├── setup.sh                              # One-command install script
 ├── .gitignore
 ├── reference/
