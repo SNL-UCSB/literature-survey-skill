@@ -2,7 +2,7 @@
 
 This reference guides the craft extraction step during Pass 3+ in deepen mode. When a student reads a paper they admire, they should analyze HOW the authors made their argument effective — building a personal corpus of writing craft lessons.
 
-Source: Arpit Gupta's paper-writing editorial framework, derived from analysis of TurboTest (NSDI), CAF (SIGCOMM+ANRP), Demystifying (NeurIPS), NetForge, BQT+, and NetBurst.
+Source: the SNL lab's paper-writing editorial framework ([paper-writing-skill](https://github.com/SNL-UCSB/paper-writing-skill)), derived from forensic analysis of published papers' revision histories.
 
 ## Introduction: The Six-Move Formula
 
@@ -20,7 +20,7 @@ Every effective systems/networking introduction follows this sequence. For each 
 
 ### Move 3: Key Abstraction
 **Function:** Introduce the paper's defining intellectual contribution as a named concept.
-**What to look for:** A coined, memorable, citable term. "Progressive disaggregation." "External termination layer." "Intrinsic evaluation framework."
+**What to look for:** A coined, memorable, citable term. "Demand-first placement." "Staged admission control." "Lease-based eviction." (invented for illustration)
 **Quality signal:** Accepted papers have named abstractions. Rejected papers describe contributions generically.
 
 ### Move 4: Design Intuition
@@ -50,7 +50,7 @@ For every contribution in the introduction, trace: claim → evaluation subsecti
 
 ### Key Elements to Assess
 - **Setup compression:** Few labeled paragraphs (good) vs. 35 subsections on infrastructure (overreach)
-- **Deep dive / disaggregation:** Results broken down by meaningful dimensions (speed tier, RTT, geography). Shows who benefits most AND least.
+- **Deep dive / disaggregation:** Results broken down by meaningful dimensions (load level, input size, region). Shows who benefits most AND least.
 - **Takeaway paragraphs:** Explicit synthesis after every experiment cluster, tying results back to specific claims.
 - **Ablation:** Shows each component contributes. Its absence is a common reviewer concern.
 - **Robustness:** Tests under conditions not in the training set.
